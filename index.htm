@@ -384,7 +384,7 @@
             </div>
             <div class="modal-footer">
                 <button class="redpill" id="closeModalBtn">Yes</button>
-                <button class="bluepill" id="closeModalBtn">Yes </button>
+                <button  class="bluepill" id="closeModalBtn2">Yes</button>
             </div>
         </div>
     </div>
@@ -465,7 +465,6 @@ check  out - nahui</a>  -->
         <marquee direction="right" scrollamount="20">
         </marquee>
     </div>
-    <img src="wiggly-pictures/daniil-safonov-uganda.gif" style="width:90%; height:350px; padding-left:5%;">
 
     <div class="content-area">
         <audio id="music" controls autoplay>
@@ -492,8 +491,7 @@ check  out - nahui</a>  -->
                 Connect Phantom to the PumpSwap acquire some $AUTISM <img src="funny-pictures/knuckles-excercise.gif"
                     width="50" height="50"></b>
                 <br />
-                (<a href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x6ac85b5698190a3b868f5D546bc50bF12C386094"
-                    target="_blank">Phantom</a> can be used.)
+
             </li>
         </ol>
 
@@ -535,21 +533,6 @@ Trust in Autism.</br>
         </p>
         <br>
         <hr><br>
-        <h2 id="FunnyPictures">Funny Pictures And Videos</h2>
-        <a href="https://twitter.com/DKK420M/status/1667041951886000129" target="_blank"
-            style="color:rgb(255, 51, 255); font-size: 28px;">Original trailer</a></br></br>
-
-        <a href="https://twitter.com/DKK420M/status/1668349739492859927" target="_blank"
-            style="color:rgb(255, 51, 255); font-size: 28px;">knugla$ hu$tler$ univer$ity - epi$ode 1</a></br></br>
-
-        <a href="https://twitter.com/DKK420M/status/1668654686566580224" target="_blank"
-            style="color:rgb(255, 51, 255); font-size: 28px;">knugla$ hu$tler$ univer$ity - epi$ode 2</a></br></br>
-
-        <a href="https://twitter.com/DKK420M/status/1668926315313938432" target="_blank"
-            style="color:rgb(255, 51, 255); font-size: 28px;">Faded HarryPotterObamaSonic10Inu?</a></br></br>
-
-        <a href="https://twitter.com/DKK420M/status/1668676148711006208" target="_blank"
-            style="color:rgb(255, 51, 255); font-size: 28px;">#HPOS10I x #DKK420M</a></br></br>
 
 
         <!-- <img src="funny-pictures/mem1.jpg" style="max-width: 400px;"> -->
@@ -605,6 +588,7 @@ Dumbledore solves the centralization problem (takes down corrupt schools and gov
                 <img src="funny-pictures/mem34.jpg" style="max-width: 400px;">
                 <img src="funny-pictures/mem53.jpg" style="max-width: 400px;"> -->
         </p>
+    <img src="wiggly-pictures/daniil-safonov-uganda.gif" style="width:90%; height:350px; padding-left:5%;">
 
 
         <style>
@@ -768,6 +752,7 @@ Dumbledore solves the centralization problem (takes down corrupt schools and gov
                 sparkle();
 
                 const closeBtn = document.getElementById('closeModalBtn');
+                const closeBtn2 = document.getElementById('closeModalBtn2');
                 const modal = document.getElementById('modal');
                 const redirectBtn = document.getElementById('redirectModalBtn');
                 modal.classList.add('open');
@@ -775,10 +760,16 @@ Dumbledore solves the centralization problem (takes down corrupt schools and gov
                 closeBtn.addEventListener('click', () => {
                     modal.classList.remove('open');
                 });
-
-                redirectBtn.addEventListener('click', () => {
-                    window.open("https://hpos10i.com", '_blank');
-                })
+                if (closeBtn2) {
+                    closeBtn2.addEventListener('click', () => {
+                        modal.classList.remove('open');
+                    });
+                }
+                if (redirectBtn) {
+                    redirectBtn.addEventListener('click', () => {
+                        window.open("https://hpos10i.com", '_blank');
+                    });
+                }
 
 
             }
